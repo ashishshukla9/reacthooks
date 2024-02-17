@@ -6,7 +6,7 @@ const HooksRef = () => {
   let usePara = useRef(null);
 
   function clickMagic(){
-    
+    setIsVisible(!isVisible);
     console.log('Click Effect show this')
 
     usePara.current.style.display= isVisible ? 'none' : 'block';
